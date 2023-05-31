@@ -13,7 +13,7 @@ export const About=() =>{
         <div className='grid grid-cols-12 h-full gap-5  '>
           {Service.map((value,index)=>
           <div className='lg:col-span-6 col-span-12'>
-              <Card title={value.title} about={value.about} Icon={value.Icon} />
+              <Card key={index} title={value.title} about={value.about} Icon={value.Icon} />
              <div>
              </div>
              </div>)}

@@ -15,7 +15,7 @@ function Resume() {
           <div className='flex flex-col gap-5 '>
           
               {Languages.map((value,index)=><>
-                <div className='w-full bg-gray-200 rounded-full'>
+                <div className='w-full bg-gray-200 rounded-full' key={index}>
                <Process name={value.name} level={value.level} Icon={value.Icon}/>
               </div>
               </>)}
@@ -34,7 +34,7 @@ function Resume() {
            <div className='flex flex-col gap-5 '>
           
               {Tooll.map((value,index)=><>
-                <div className='w-full bg-gray-200 rounded-full'>
+                <div className='w-full bg-gray-200 rounded-full' key={index}>
                <Process name={value.name} level={value.level} Icon={value.Icon}/>
               </div>
               </>)}

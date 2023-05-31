@@ -40,7 +40,7 @@ export const  CardProject:FunctionComponent<Iproject>=({name,description,image,p
                         <div className='flex gap-2 flex-wrap'>
                         {
                         key_techt.map((value,index)=>(<>
-                        <div className='rounded-3xl px-2 bg-blue-50 text-black'>
+                        <div  key={index} className='rounded-3xl px-2 bg-blue-50 text-black'>
                             {value}
 
                         </div>
